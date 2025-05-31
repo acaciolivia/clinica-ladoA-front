@@ -178,7 +178,7 @@ export default function DoctorsPage() {
         <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
           <div className="flex justify-between items-center mb-4">
             <div>
-              <h1 className="text-3xl font-bold text-gray-900">
+              <h1 className="text-3xl font-bold text-blue-900">
                 Gerenciamento de Médicos
               </h1>
               <p className="text-gray-600 mt-1">

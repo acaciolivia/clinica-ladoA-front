@@ -61,7 +61,7 @@ export default function PatientsPage() {
     const mockPatients: Patient[] = [
       {
         id: "1",
-        name: "Ana Costa",
+        name: "Uendel Martins",
         email: "ana.costa@email.com",
         phone: "(85) 99999-1111",
         cpf: "123.456.789-00",
@@ -77,7 +77,7 @@ export default function PatientsPage() {
       },
       {
         id: "2",
-        name: "Pedro Oliveira",
+        name: "Lívia Acácio",
         email: "pedro.oliveira@email.com",
         phone: "(85) 77777-2222",
         cpf: "987.654.321-00",

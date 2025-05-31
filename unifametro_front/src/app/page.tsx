@@ -65,7 +65,7 @@ export default function Dashboard() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">Dashboard</h1>
+          <h1 className="text-4xl font-bold text-blue-900 mb-2">Dashboard</h1>
           <p className="text-gray-600">
             Bem-vindo ao sistema de agendamentos do lado A da Unifametro
           </p>
@@ -147,7 +147,7 @@ export default function Dashboard() {
             </h2>
             <div className="grid grid-cols-2 gap-4">
               <Link
-                href="/doctors"
+                href="/doctor"
                 className="flex flex-col items-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors group"
               >
                 <Stethoscope className="h-8 w-8 text-blue-600 mb-2 group-hover:scale-110 transition-transform" />
@@ -157,7 +157,7 @@ export default function Dashboard() {
               </Link>
 
               <Link
-                href="/patients"
+                href="/patient"
                 className="flex flex-col items-center p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors group"
               >
                 <Users className="h-8 w-8 text-green-600 mb-2 group-hover:scale-110 transition-transform" />

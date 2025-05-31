@@ -33,9 +33,9 @@ const Sidebar: React.FC<SidebarProps> = ({
 
   const menuItems = [
     { icon: Home, label: "Dashboard", href: "/" },
-    { icon: CalendarDays, label: "Agendamentos", href: "/agendamentos" },
-    { icon: Users, label: "Pacientes", href: "/patient" },
-    { icon: Stethoscope, label: "Médicos", href: "/doctor" },
+    { icon: CalendarDays, label: "Agendamentos", href: "/appointments" },
+    { icon: Users, label: "Pacientes", href: "/patients" },
+    { icon: Stethoscope, label: "Médicos", href: "/doctors" },
     { icon: Clock, label: "Horários", href: "/horarios" },
     { icon: FileText, label: "Relatórios", href: "/relatorios" },
     { icon: BarChart3, label: "Analytics", href: "/analytics" },
