@@ -30,7 +30,6 @@ const Sidebar: React.FC<SidebarProps> = ({
   const [internalIsOpen, setInternalIsOpen] = useState(true);
   const pathname = usePathname();
 
-  // Use external state if provided, otherwise use internal state
   const isOpen = externalIsOpen !== undefined ? externalIsOpen : internalIsOpen;
   const handleToggle = onToggle || (() => setInternalIsOpen(!internalIsOpen));
 
@@ -84,7 +83,6 @@ const Sidebar: React.FC<SidebarProps> = ({
 
   return (
     <>
-      {/* Mobile Overlay */}
       {isOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
@@ -92,7 +90,6 @@ const Sidebar: React.FC<SidebarProps> = ({
         />
       )}
 
-      {/* Sidebar */}
       <div
         className={`
         fixed top-0 left-0 h-full bg-white shadow-xl z-50 transition-all duration-300 ease-in-out
@@ -100,7 +97,6 @@ const Sidebar: React.FC<SidebarProps> = ({
         ${isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
       `}
       >
-        {/* Header */}
         <div className="flex items-center justify-between p-4 border-b border-gray-200">
           {isOpen && (
             <Link href="/" className="flex items-center space-x-2">
@@ -124,7 +120,6 @@ const Sidebar: React.FC<SidebarProps> = ({
           </button>
         </div>
 
-        {/* Navigation */}
         <nav className="flex-1 p-4">
           <ul className="space-y-2">
             {menuItems.map((item, index) => (
@@ -138,7 +133,6 @@ const Sidebar: React.FC<SidebarProps> = ({
           </ul>
         </nav>
 
-        {/* Settings */}
         <div className="p-4 border-t border-gray-200">
           <Link
             href="/configuracoes"
@@ -164,7 +158,6 @@ const Sidebar: React.FC<SidebarProps> = ({
           </Link>
         </div>
 
-        {/* User Info */}
         {isOpen && (
           <div className="p-4 border-t border-gray-200">
             <div className="flex items-center space-x-3">
@@ -182,7 +175,6 @@ const Sidebar: React.FC<SidebarProps> = ({
         )}
       </div>
 
-      {/* Mobile Toggle Button */}
       <button
         onClick={handleToggle}
         className="fixed top-4 left-4 z-30 p-2 bg-white rounded-lg shadow-lg lg:hidden"
