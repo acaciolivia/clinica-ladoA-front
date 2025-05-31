@@ -4,9 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
-  Calendar,
   Users,
-  UserPlus,
   Clock,
   FileText,
   BarChart3,
@@ -36,9 +34,8 @@ const Sidebar: React.FC<SidebarProps> = ({
   const menuItems = [
     { icon: Home, label: "Dashboard", href: "/" },
     { icon: CalendarDays, label: "Agendamentos", href: "/agendamentos" },
-    { icon: Users, label: "Pacientes", href: "/pacientes" },
-    { icon: Stethoscope, label: "Médicos", href: "/medicos" },
-    { icon: UserPlus, label: "Novo Paciente", href: "/pacientes/novo" },
+    { icon: Users, label: "Pacientes", href: "/patient" },
+    { icon: Stethoscope, label: "Médicos", href: "/doctor" },
     { icon: Clock, label: "Horários", href: "/horarios" },
     { icon: FileText, label: "Relatórios", href: "/relatorios" },
     { icon: BarChart3, label: "Analytics", href: "/analytics" },
